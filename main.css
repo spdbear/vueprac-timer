@@ -1,5 +1,4 @@
 body {
-  text-align: center;
   background-color: #000;
   color: #fff;
 }
@@ -9,31 +8,30 @@ h1 {
 }
 
 input[type="time"] {
-  color: #fff;
+  background: none;
   padding: 0;
   border: none;
   border-radius: 0;
   outline: none;
-  background: none;
+
+  color: #aff;
+  text-shadow:
+    0 0 5px #0f5,
+    0 0 10px #0f0,
+    0 0 20px #0ff;
 }
 
-.current-time {
+.time {
   font-size: 100px;
   font-family: 'Segment7Standard';
-}
 
-.input-time {
-  font-size: 100px;
-  font-family: 'Segment7Standard';
-  font-weight: normal
-}
-
-.countdown-time {
-  font-size: 100px;
-  color: #ffa;
-  font-family: 'Segment7Standard';
-  text-shadow: 0 0 5px #f50,
-    0 0 10px rgba(255, 0, 0, 0.76),
-    0 0 20px #ff0;
   /* text-shadow: 0 0 3px 0 #ff0; */
+}
+
+#countDownTime {
+  color: #ffa;
+  text-shadow:
+    0 0 5px #f50,
+    0 0 10px #f00,
+    0 0 20px #ff0;
 }
