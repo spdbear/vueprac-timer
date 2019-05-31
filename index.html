@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Timer</title>
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css" />
+  <link href="main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div id="app">
+    <h1>Countdown Timer</h1>
+    <!-- <div id="currentTime" class="current-time">{{currentTime}}</div> -->
+    <div>
+      <input v-model="endTime" type="time" class="input-time" step="1" value="00:00:00" />
+    </div>
+    <!-- <button id="timerStart">Start</button> -->
+    <div id="countDownTime" class="countdown-time">{{countDownTime}}</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
