@@ -5,7 +5,7 @@ var app = new Vue({
   // 用いるデータ
   data: {
     currentDate: "",
-    endTime: "00:00:00",
+    endTime: "00:00",
   },
 
   // 算出プロパティ
@@ -30,7 +30,8 @@ var app = new Vue({
   // created:
   created: function () {
     setInterval(function () {
-      this.currentDate = new Date()
+      this.currentDate = new Date();
+      document.title = this.countDownTime;
     }.bind(this), 100)
   },
 
@@ -53,7 +54,7 @@ var app = new Vue({
     },
 
     msecToTime: function (sec) {
-      var sec = Math.floor(Number(sec) / 1000);
+      var sec = Math.floor(Number(sec) / 1000) % (60 * 60 * 24);
       sec = sec < 0 ? sec + 60 * 60 * 24 : sec;
       var h = Math.floor(sec / 3600);
       var m = Math.floor((sec - h * 3600) / 60);

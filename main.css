@@ -15,23 +15,15 @@ input[type="time"] {
   outline: none;
 
   color: #aff;
-  text-shadow:
-    0 0 5px #0f5,
-    0 0 10px #0f0,
-    0 0 20px #0ff;
+  text-shadow: 0 0 5px #0f5, 0 0 10px #0f0, 0 0 20px #0ff;
 }
 
 .time {
   font-size: 100px;
-  font-family: 'Segment7Standard';
-
-  /* text-shadow: 0 0 3px 0 #ff0; */
+  font-family: "Nova Mono";
 }
 
 #countDownTime {
   color: #ffa;
-  text-shadow:
-    0 0 5px #f50,
-    0 0 10px #f00,
-    0 0 20px #ff0;
+  text-shadow: 0 0 5px #f50, 0 0 10px #f00, 0 0 20px #ff0;
 }

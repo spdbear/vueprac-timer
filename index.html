@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Timer</title>
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap&text=01234567890-:" rel="stylesheet">
   <link href="main.css" rel="stylesheet" />
 
 </head>
@@ -12,9 +12,10 @@
 <body>
   <div id="app">
     <h1>Countdown Timer</h1>
+    <p>上に時刻を入力すると<br>下にその時刻までの残り時間を表示します</p>
     <!-- <div id="currentTime" class="time">{{currentTime}}</div> -->
     <div>
-      <input v-model="endTime" type="time" class="time" step="1" value="00:00:00" />
+      <input v-model="endTime" type="time" class="time" step="60" value="00:00" />
     </div>
     <!-- <button id="timerStart">Start</button> -->
     <div id="countDownTime" class="time">{{countDownTime}}</div>
